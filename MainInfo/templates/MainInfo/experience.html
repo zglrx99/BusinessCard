@@ -1,10 +1,10 @@
-{% extends 'MainInfo/main_info.html' %} {% block content %}
+{% extends 'MainInfo/main_info.html' %} {% load staticfiles %} {% block content %}
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link" href="../">Обо мне</a>
+                    <a class="nav-link" href="../">Личные сведения</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active disabled" href="../experience/">Опыт работы</a>
@@ -21,14 +21,70 @@
 </div>
 <div class="container mt-3">
     <div class="row">
-        <div class="col-md-4">
-            <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="http://montessoriself.ru/wp-content/uploads/2014/09/kartochka-yabloko-1.jpg" alt="Card image cap">
-            </div>
-        </div>
-        <div class="col-md-8">
-            <h3>Всем добрый вечер, меня зовут блаблабла</h3>
-        </div>
+        <h3>Опыт работы</h3>
+        <table class="table">
+            <thead class="thead-default">
+                <tr>
+                    <th></th>
+                    <th>Компания</th>
+                    <th>Основная информация</th>
+                    <th>Период работы</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>
+
+                        <img src="{% static "img/diasoft.png"%}" class="text-center rounded mx-auto d-block" alt="Diasoft" />
+                        <h6 class="text-center">Diasoft</h6>
+                    </td>
+                    <td>
+                        <h5>Специалист по внедрению автоматизированных банковских систем</h5>
+                        <h6>Обязанности:</h6>
+                        <ul>
+                            <li>Развертывание решения на стороне заказчика</li>
+                            <li>Написание и согласование тест-кейсов</li>
+                            <li>Обучение пользователей работе с системой</li>
+                            <li>Проведение приемо-сдаточных испытаний</li>
+                            <li>Тестирование функционала банковского ПО, интеграционное тестирование, регрессионное тестирование,
+                                smoke-тестирование, GUI-тестирование</li>
+                            <li>Написание технической документации</li>
+                            <li>Подготовка внутренних отчётов по тестированию</li>
+                            <li>Локализация дефектов и постановка задач для разработчиков системы</li>
+                            <li>Приемка и установка пакетов обновлений</li>
+                        </ul>
+                    </td>
+                    <td>Октябрь 2016 — по настоящее время</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>
+
+                        <img src="{% static "img/samsung.png"%}" class="text-center rounded mx-auto d-block" alt="Samsung Mobile" />
+                        <h6 class="text-center">Самсунг, Группа компаний</h6>
+
+                    </td>
+                    <td>
+                        <h5>Ассистент разработчика мобильных приложений</h5>
+                        <h6>Обязанности:</h6>
+                        <ul>
+                            <li>Тестирование базового функционала мобильных устройств</li>
+                            <li>Smoke и GUI тестирование мобильных приложений</li>
+                            <li>Тестирование обновлений программного обеспечения мобильных устройств</li>
+                            <li>Написание технической документации</li>
+                            <li>Анализ, локализация и описание дефектов</li>
+                            <li>Разработка тест-кейсов</li>
+                            <li>Подготовка внутренних отчётов по тестированию</li>
+                            <li>Взаимодействие по вопросам контроля качества функциональности мобильных устройств с командами
+                                разработки и тестирования</li>
+                            <li>Презентация новинок выпускаемых продуктов</li>
+                        </ul>
+                    </td>
+                    <td>Март 2016 — октябрь 2016</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 {% endblock content %}

@@ -22,17 +22,8 @@
     </div>
 </div>
 <div class="container mt-3">
-    <div class="row">
-        <h1>Обратная связь</h1>
-        <p>Если у Вас есть какие-либо замечания или предложения, можете оставить обратную связь, заполнив информацию в форме ниже.</p>
-    </div>
     <div class="row justify-content-center">
-        <form method="POST" class="post-form">
-            <div class="form-group">
-                {% csrf_token %} {{ form|bootstrap }}
-            </div>
-            <button type="submit" class="save btn btn-default">Отправить</button>
-        </form>
+        <h1>Спасибо за оставленный отзыв</h1>
     </div>
 </div>
 {% endblock content %}

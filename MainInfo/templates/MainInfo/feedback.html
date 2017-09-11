@@ -1,6 +1,4 @@
-{% extends 'MainInfo/main_info.html' %} 
-{% load bootstrap %}
-{% block content %}
+{% extends 'MainInfo/main_info.html' %} {% load bootstrap %} {% block content %}
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
@@ -22,17 +20,34 @@
     </div>
 </div>
 <div class="container mt-3">
-    <div class="row">
-        <h1>Обратная связь</h1>
-        <p>Если у Вас есть какие-либо замечания или предложения, можете оставить обратную связь, заполнив информацию в форме ниже.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h3>Контактные данные:</h3>
+        </div>
+        <div class="col-md-8">
+
+            <h3>Если у Вас есть какие-либо замечания или предложения, можете оставить обратную связь, заполнив информацию в форме
+                ниже.
+            </h3>
+        </div>
     </div>
     <div class="row justify-content-center">
-        <form method="POST" class="post-form">
-            <div class="form-group">
-                {% csrf_token %} {{ form|bootstrap }}
-            </div>
-            <button type="submit" class="save btn btn-default">Отправить</button>
-        </form>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fa fa-2x fa-mobile" aria-hidden="true"> +7(985)347-25-62</i></li>
+                <li class="list-group-item"><i class="fa fa-2x fa-envelope" aria-hidden="true"> 79danil@gmail.com</i></li>
+            </ul>
+
+        </div>
+        <div class="col-md-8">
+            <form method="POST" class="post-form">
+                <div class="form-group">
+                    {% csrf_token %} {{ form|bootstrap }}
+                </div>
+                <button type="submit" class="save btn btn-default">Отправить</button>
+            </form>
+        </div>
     </div>
+</div>
 </div>
 {% endblock content %}

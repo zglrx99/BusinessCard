@@ -1,4 +1,4 @@
-{% extends 'MainInfo/main_info.html' %} {% block content %}
+{% extends 'MainInfo/main_info.html' %} {% load staticfiles %} {% block content %}
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
@@ -23,11 +23,14 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="http://montessoriself.ru/wp-content/uploads/2014/09/kartochka-yabloko-1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static "img/fa.jpg" %}" alt="FA">
             </div>
         </div>
         <div class="col-md-8">
-            <h3>Всем добрый вечер, меня зовут блаблабла</h3>
+            <h3>Образование</h3>
+            <p>В 2016 году получил высшее образование (бакалавр), окончив Финансовый университет при Правительстве Российской Федерации г. Москва по специальности "Прикладная информатика"</p>
+            <p>Кафедра: Прикладная информатика и информационные технологии</p>
+            <p>Направление подготовки: Прикладная информатика в экономике</p>
         </div>
     </div>
 </div>

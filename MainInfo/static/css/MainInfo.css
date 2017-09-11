@@ -1,12 +1,12 @@
-header {
-    color: rgb(221, 224, 224);
-    background-color: #006699;
-    padding: 30px;
-}
-header h1 {
-    
-}
-
-body {
-    background-color: #66CCCC;
-}
+/* form p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-bottom:1rem;
+} */

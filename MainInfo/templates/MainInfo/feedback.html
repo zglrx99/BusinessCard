@@ -1,0 +1,38 @@
+{% extends 'MainInfo/main_info.html' %} 
+{% load bootstrap %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../experience/">Опыт работы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../education/">Образование</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active disabled" href="../feedback/">Обратная связь</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="row">
+        <h1>Обратная связь</h1>
+        <p>Если у Вас есть какие-либо замечания или предложения, можете оставить обратную связь, заполнив информацию в форме ниже.</p>
+    </div>
+    <div class="row justify-content-center">
+        <form method="POST" class="post-form">
+            <div class="form-group">
+                {% csrf_token %} {{ form|bootstrap }}
+            </div>
+            <button type="submit" class="save btn btn-default">Отправить</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

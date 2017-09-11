@@ -3,5 +3,8 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.main_info, name = 'main_info')
+    url(r'^$', views.myself, name = 'myself'),
+    url(r'^experience/$', views.experience, name = 'experience'),
+    url(r'^feedback/$', views.feedback, name = 'feedback'),
+    url(r'^education/$', views.education, name = 'education'),
 ]

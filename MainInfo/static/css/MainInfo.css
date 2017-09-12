@@ -1,12 +1,27 @@
-/* form p {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 0;
-    margin-bottom:1rem;
-} */
+header {
+    background-color: #7EC0EE;
+    padding: 5px;
+    font-family: Lumberjack;
+}
+
+footer {
+    background-color: #7EC0EE;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+#bg {
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.main {
+    background-color: white;
+}
+
+@font-face {
+    font-family: Lumberjack;
+    src: url('../fonts/Lumberjack.otf') format("opentype");
+}

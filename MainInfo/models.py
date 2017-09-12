@@ -5,7 +5,7 @@ from django.utils import timezone
 
 
 class Feedback(models.Model):
-    author = models.CharField( verbose_name = "Введите Ваше имя", max_length = 254)
+    author = models.CharField( verbose_name = "Имя", max_length = 254)
     email = models.EmailField(verbose_name = "E-mail", max_length = 254)
     phone_number = models.CharField(verbose_name = "Контактный телефон", max_length = 254)
     text = models.TextField(verbose_name = "Сообщение", max_length = 2048)

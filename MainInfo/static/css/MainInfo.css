@@ -19,9 +19,18 @@ footer {
 
 .main {
     background-color: white;
+    padding-bottom: 10px;
 }
 
 @font-face {
     font-family: Lumberjack;
     src: url('../fonts/Lumberjack.otf') format("opentype");
+}
+
+.mt-3 {
+    min-height: 350px;
+}
+
+#thanks {
+    padding-top	: 7%; /* минус от половины высоты */;
 }

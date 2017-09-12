@@ -1,9 +1,7 @@
-{% extends 'MainInfo/main_info.html' %} 
-{% load bootstrap %}
-{% block content %}
+{% extends 'MainInfo/main_info.html' %} {% load bootstrap %} {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link" href="../">Личные сведения</a>
@@ -21,9 +19,9 @@
         </div>
     </div>
 </div>
-<div class="container mt-3">
-    <div class="row justify-content-center">
-        <h1>Спасибо за оставленный отзыв</h1>
-    </div>
+<div id="thanks" class="container mt-3 text-center">
+        <h1 class="display-4">Спасибо за оставленное сообщение!</h1>
+        <br>
+        <i class="fa fa-paper-plane-o fa-4x" aria-hidden="true"></i>
 </div>
 {% endblock content %}
